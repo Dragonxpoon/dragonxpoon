@@ -19,14 +19,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f5f5f5;
+      background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 25%, #fad0c4 50%, #a1c4fd 75%, #c2e9fb 100%);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       padding: 15px;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     .card {
       width: 100%;
-      max-width: 400px; /* 调整这里可以改变卡片的最大宽度 */
-      background-color: #fff;
+      max-width: 400px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
       border-radius: 15px;
       overflow: hidden;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -40,7 +55,7 @@
     .card .header {
       position: relative;
       height: 180px; /* 调整这里可以改变顶部背景图片的高度 */
-      background-image: url('https://github.com/Dragonxpoon/dragonxpoon/blob/main/background.jpeg?raw=true');
+      background-image: url('https://github.com/Dragonxpoon/dragonxpoon/blob/main/background.jpg?raw=true');
       background-size: cover;
       background-position: center;
       background-color: #2a2a2a;
@@ -55,7 +70,7 @@
       height: 100px; /* 调整这里可以改变头像的高度 */
       border: 4px solid white;
       border-radius: 50%;
-      background-image: url('https://github.com/Dragonxpoon/dragonxpoon/blob/main/icon.jpeg?raw=true');
+      background-image: url('https://github.com/Dragonxpoon/dragonxpoon/blob/main/icon.jpg?raw=true');
       background-size: cover;
       background-position: center;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -169,7 +184,7 @@
       <h1>Dragon Poon</h1>
       <div class="social-icons">
         <a href="javascript:void(0)" onclick="copyWechat()"><i class="fab fa-weixin"></i></a>
-        <a href="https://www.instagram.com/dragonxpoon" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/dragonxpoon" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
       </div>
     </div>
   </div>
