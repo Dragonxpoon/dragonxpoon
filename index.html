@@ -167,7 +167,6 @@
     </div>
     <div class="content">
       <h1>Dragon Poon</h1>
-      <p>@Dragonxp94</p>
       <div class="social-icons">
         <a href="javascript:void(0)" onclick="copyWechat()"><i class="fab fa-weixin"></i></a>
         <a href="https://www.instagram.com/dragonxpoon" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -177,7 +176,7 @@
   <script>
     function copyWechat() {
       navigator.clipboard.writeText("dragonxp94").then(function() {
-        alert("已複製微信ID");
+        alert("已複製，即將打開微信");
         setTimeout(function() {
           window.location.href = "weixin://";
         }, 1000);
